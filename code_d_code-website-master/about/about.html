@@ -324,15 +324,101 @@ a
 }
 
     </style>
-    
-
-
-    
-
+    <style type="text/css">
+        /* Remove fixed width from .container and use Bootstrap's container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        /* Responsive text and padding for about section */
+        .about-section {
+            padding: 2rem 1rem;
+        }
+        .about-section p {
+            color: white;
+            font-size: 1.1rem;
+            padding-left: 0;
+            padding-right: 0;
+        }
+        @media (min-width: 768px) {
+            .about-section {
+                padding: 2rem 7rem;
+            }
+            .about-section p {
+                font-size: 1.2rem;
+            }
+        }
+        /* Responsive navbar */
+        .navbarf {
+            background-color: #060b1c;
+            width: 100%;
+        }
+        .nav-items {
+            flex-wrap: wrap;
+            gap: 1rem;
+            padding: 0 1em;
+        }
+        @media (max-width: 991px) {
+            .nav-items {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+                padding: 0;
+            }
+            .modernbutton {
+                margin-left: 0 !important;
+            }
+        }
+        /* Responsive footer */
+        .kavya {
+            width: 100%;
+            padding-top: 2rem;
+            height: auto;
+        }
+        .kavya .list-inline {
+            margin-right: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            justify-content: center;
+        }
+        .kavya .list-inline-item {
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+        }
+        .kavya .text {
+            margin-left: 0;
+            margin-top: 1rem;
+            text-align: center;
+        }
+        /* Responsive logo */
+        .logo {
+            width: 40px;
+            height: 40px;
+        }
+        @media (max-width: 576px) {
+            .logo {
+                width: 30px;
+                height: 30px;
+            }
+            .about-section {
+                padding: 1rem 0.5rem;
+            }
+        }
+        /* Remove fixed width/height from main content */
+        .main-bg {
+            width: 100%;
+            min-height: 600px;
+            background-color: #181d38;
+        }
+    </style>
 </head>
 <body>
 
-<nav class="navbarf" style="background-color:#060b1c;width: 1360px;">
+<nav class="navbarf">
 
     <div class="container">
             <div class="navbar">
@@ -360,64 +446,65 @@ a
    
  
 </nav>
-<div style="width: 1360px;height: 900px;background-color: #181d38;">
+<div class="main-bg">
 
 
-    <h2 align="center" style="padding-top: 26px;padding-bottom: 25px;color: white;">About Code_d_Code</h2>
+    <div class="about-section">
+        <h2 align="center" style="padding-top: 26px;padding-bottom: 25px;color: white;">About Code_d_Code</h2>
 
-    <p style="padding-left: 114px;color: white;padding-right: 114px; font-size: 18px;">
+        <p>
 
-Coding  Society (or Coding club) is a community of students highly enthusiastic about coding, ethical hacking, Web Designing and all other aspects of programming. We are a team currently of 6 coordinators (3rd year) and 4 secretaries (sophomores).
-Our Instagram Page boasts around 100 followers and is a hub for programming-related posts and information. We use it to share exciting updates, promote events, engage with our community, and put out informative posts that keep our followers up-to-date on the latest in the programming world.
-
-
-
-</p>
-
-    <p style="padding-left: 114px;color: white;padding-right: 114px;font-size: 18px;">
-
-We organize activities related to Development (Web Development, Open Source, App Development), programming contests, hackathons, Capture The Flag contests, et all. Lecture series are regularly taken on algorithms, development, among other things.
+            Coding  Society (or Coding club) is a community of students highly enthusiastic about coding, ethical hacking, Web Designing and all other aspects of programming. We are a team currently of 6 coordinators (3rd year) and 4 secretaries (sophomores).
+            Our Instagram Page boasts around 100 followers and is a hub for programming-related posts and information. We use it to share exciting updates, promote events, engage with our community, and put out informative posts that keep our followers up-to-date on the latest in the programming world.
 
 
-</p>
-<p style="padding-left: 114px;color: white;padding-right: 114px;font-size: 18px;">
 
-Coding Society is also dedicated to developing various applications that are beneficial for the campus junta, Student Search, Linux Install fest, and promoting open-source software.
+        </p>
 
-</p>
-<p style="padding-left: 114px;color: white;padding-right: 114px;font-size: 18px;">
+        <p>
 
-Code Club is a voluntary initiative, founded in 2012. The initiative aims to provide opportunities for children aged 9 to 13 to develop coding skills through free after-school clubs. As of November 2015, over 3,800 schools and other public venues established a Code Club, regularly attended by an estimated 44,000 young people across the UK.[1] The organization also expanded internationally, and there are now over 13,000 Code Club operating worldwide.[2] Volunteer programmers and software developers give their time to run Code Club sessions, passing on their programming skills and mentoring the young students.[3][4] Children create their own computer games, animations and websites, learning how to use technology creatively.
-
-</p>
-<p style="padding-left: 114px;color: white;padding-right: 114px;font-size: 18px;">
-
-During summers, we offer a large number of projects to the first year students through our Summer Camp. The 2022 Summer Camp saw close to 100 applicants.
-
-Feel free to contact any of our members any time in case of any queries! We hang out on Discord
-<br>
+            We organize activities related to Development (Web Development, Open Source, App Development), programming contests, hackathons, Capture The Flag contests, et all. Lecture series are regularly taken on algorithms, development, among other things.
 
 
-Happy Coding!
+        </p>
+        <p>
 
-</p>
-<p style="padding-left: 114px;color: white;padding-right: 114px;font-size: 18px;">
-Feel free to contact any of our members any time in case of any queries! We hang out on Discord
-<br>
+            Coding Society is also dedicated to developing various applications that are beneficial for the campus junta, Student Search, Linux Install fest, and promoting open-source software.
 
-Happy Coding!</p>
+        </p>
+        <p>
+
+            Code Club is a voluntary initiative, founded in 2012. The initiative aims to provide opportunities for children aged 9 to 13 to develop coding skills through free after-school clubs. As of November 2015, over 3,800 schools and other public venues established a Code Club, regularly attended by an estimated 44,000 young people across the UK.[1] The organization also expanded internationally, and there are now over 13,000 Code Club operating worldwide.[2] Volunteer programmers and software developers give their time to run Code Club sessions, passing on their programming skills and mentoring the young students.[3][4] Children create their own computer games, animations and websites, learning how to use technology creatively.
+
+        </p>
+        <p>
+
+            During summers, we offer a large number of projects to the first year students through our Summer Camp. The 2022 Summer Camp saw close to 100 applicants.
+
+            Feel free to contact any of our members any time in case of any queries! We hang out on Discord
+            <br>
 
 
+            Happy Coding!
+
+        </p>
+        <p>
+            Feel free to contact any of our members any time in case of any queries! We hang out on Discord
+            <br>
+
+            Happy Coding!</p>
+
+    </div>
 
 </div>
 
 
    
 
-<div class="kavya" style="width: 1360px;background-color: #060b1c;padding-top: 54px;height: 200px;">
+<div class="kavya">
     
 
-<a class="navbar-brand" href="file:///C:/Users/DELL/Desktop/html/code_d_code/Home/index.html" style="margin-left: 109px;">
+<a class="navbar-brand" href="file:///C:/Users/DELL/Desktop/html/code_d_code/Home/index.html" style="margin-left: 0;">
       <img src="logo.jpeg" alt="codedcode" width="80" height="80" style="border-radius: 50%;">
     </a>
 
@@ -425,28 +512,27 @@ Happy Coding!</p>
     font-size: 19px;
     line-height: 28.09px;
     margin-top: -73px;
-    margin-left: 220px;
+    margin-left: 120px;
     color: white;">coding society</p>
 
         <p style="font-weight: 200;
     font-size: 20px;
     line-height: 22.09px;
-    margin-left: 216px;
+    margin-left: 116px;
     color: white;">Learn For Future </p>
 
-    <div style="margin-top: -60px;
-    margin-left: 928px;">
+    <div>
       <ul class="list-inline">
-        <li class="list-inline-item"><a class="nav-link active" aria-current="page" href="file:///C:/Users/DELL/Desktop/html/code_d_code/Home/index.html" style="color: white;margin-left: -343px;">Home</a></li>
-        <li class="list-inline-item"><a class="nav-link active" aria-current="page" href="file:///C:/Users/DELL/Desktop/html/code_d_code/about/about.html" style="color:white;margin-left: -241px;">About</a></li>
-         <li class="list-inline-item"> <a class="nav-link active" aria-current="page" href="file:///C:/Users/DELL/Desktop/html/code_d_code/project/project.html" style="color:white;margin-left: -125px;">Project</a></li>
-         <li class="list-inline-item"> <a class="nav-link active" aria-current="page" href="file:///C:/Users/DELL/Desktop/html/code_d_code/events/events.html" style="color:white;margin-right: 67px;">Events</a></li>
+        <li class="list-inline-item"><a class="nav-link active" aria-current="page" href="file:///C:/Users/DELL/Desktop/html/code_d_code/Home/index.html" style="color: white;">Home</a></li>
+        <li class="list-inline-item"><a class="nav-link active" aria-current="page" href="file:///C:/Users/DELL/Desktop/html/code_d_code/about/about.html" style="color:white;">About</a></li>
+         <li class="list-inline-item"> <a class="nav-link active" aria-current="page" href="file:///C:/Users/DELL/Desktop/html/code_d_code/project/project.html" style="color:white;">Project</a></li>
+         <li class="list-inline-item"> <a class="nav-link active" aria-current="page" href="file:///C:/Users/DELL/Desktop/html/code_d_code/events/events.html" style="color:white;">Events</a></li>
          <li class="list-inline-item"> <a class="nav-link active" aria-current="page" href="file:///C:/Users/DELL/Desktop/html/code_d_code/exex_team/execteam.html" style="color:white;">Exec. team</a></li>
         
       </ul>
 
     </div>
-    <div class="text" style="margin-left: 600px;margin-top:50px;color: white;">Copyright © Code_d_Code  Coding Society. Website built by Code_d_Code</div>
+    <div class="text" style="color: white;">Copyright © Code_d_Code  Coding Society. Website built by Code_d_Code</div>
  
 
     
